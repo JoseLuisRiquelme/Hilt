@@ -38,7 +38,8 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 # Hilt Core
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
-ksp = { group = "com.google.dagger", name = "ksp", version.ref = "ksp" }
+
+#ksp = { group = "com.google.dagger", name = "ksp", version.ref = "ksp" }
 #javapoet = { group = "com.squareup", name = "javapoet", version.ref = "javapoet" }
 
 # Hilt Navigation for Compose
@@ -47,7 +48,7 @@ hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-com
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin-compose" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 
 dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt"}
 kotlin-kapt = { id = "org.jetbrains.kotlin.kapt"}
