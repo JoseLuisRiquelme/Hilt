@@ -1,7 +1,6 @@
 [versions]
-agp = "8.6.0"
-#kotlin = "1.7.20"
-kotlin = "1.8.21"
+agp = "8.9.2"
+kotlin = "2.1.10"
 coreKtx = "1.16.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -10,14 +9,11 @@ lifecycleRuntimeKtx = "2.8.7"
 activityCompose = "1.10.1"
 composeBom = "2024.09.00"
 
-hilt = "2.56.1" # última versión de Hilt estable a abril 2025
-ksp = "1.9.0-1.0.12"
-#hilt = "2.35"
+hilt = "2.56.1"
 hilt-navigation-compose = "1.1.0"
 kotlin-compose = "1.5.11"
-#kapt = "2.0.21" # Kapt plugin para Kotlin 2.0
-#kapt = "2.1.2" # Kapt plugin para Kotlin 2.0
-#javapoet = "1.13.0"
+kapt = "2.44" # Kapt plugin para Kotlin 2.0
+
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -37,10 +33,8 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 
 # Hilt Core
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
-hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "kapt" }
 
-#ksp = { group = "com.google.dagger", name = "ksp", version.ref = "ksp" }
-#javapoet = { group = "com.squareup", name = "javapoet", version.ref = "javapoet" }
 
 # Hilt Navigation for Compose
 hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hilt-navigation-compose" }
@@ -52,5 +46,5 @@ kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "ko
 
 dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt"}
 kotlin-kapt = { id = "org.jetbrains.kotlin.kapt"}
-ksp-plugin = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+
 
