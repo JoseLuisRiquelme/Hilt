@@ -13,8 +13,7 @@ hilt = "2.56.1"
 hilt-navigation-compose = "1.1.0"
 kapt = "2.44"
 ksp = "2.0.21-1.0.27"
-#kjvm = "1.9.0"
-#ksp = "1.9.0-1.0.12"
+
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -48,8 +47,8 @@ kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "ko
 #hilt-Kapt
 dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt"}
 kotlin-kapt = { id = "org.jetbrains.kotlin.kapt"}
+
 #hilt-ksp
-#kotlin-jvm = { id= "org.jetbrains.kotlin.jvm", version.ref = "kjvm"}
 ksp-plugin = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 ksp = {id = "com.google.devtools.ksp"}
 
