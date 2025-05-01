@@ -3,8 +3,9 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
 
-   //alias(libs.plugins.ksp.plugin)
-    alias(libs.plugins.kotlin.kapt)
+    //alias((libs.plugins.kotlin.jvm))
+    alias(libs.plugins.ksp)
+    //alias(libs.plugins.kotlin.kapt)
     alias(libs.plugins.dagger.hilt)
 }
 
@@ -56,10 +57,10 @@ dependencies {
 
     // Core Hilt
     implementation(libs.hilt.android)
-    kapt(libs.hilt.compiler)
+    //kapt(libs.hilt.compiler)
 
     //ksp
-    //ksp(libs.hilt.compiler)
+    ksp(libs.hilt.compiler)
 
     // Para usar @HiltViewModel en Compose
     implementation(libs.hilt.navigation.compose)
@@ -71,6 +72,6 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 }
-kapt {
+/*kapt {
     correctErrorTypes = true
-}
+}*/
